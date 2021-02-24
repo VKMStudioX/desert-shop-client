@@ -1,0 +1,115 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        // &::after {
+        //     transform: scaleX(1.4) scaleY(1.6);
+        //     opacity: 0;
+        // }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--dark {
+        background-color: rgba($color-grey-dark-3, .7);
+        color: $color-primary;
+
+        &:hover {
+            background-color: $color-grey-dark-3;
+        }
+    }
+    
+    &--square {
+        border-radius: 0;
+    }
+
+    &--card {
+        border-radius: 0;
+        overflow: hidden;
+        transform: none !important;
+        margin-right: 2px;
+        color: $color-white;
+        padding:1.5rem;
+        text-transform: none;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    // &--animated {
+    //     animation: moveInBottom .5s ease-out .75s;
+    //     animation-fill-mode: backwards;
+    // }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px; 
+        transition: all .2s;
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-black;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}

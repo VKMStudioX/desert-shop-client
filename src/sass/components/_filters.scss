@@ -1,0 +1,19 @@
+.filters {
+    background-color: $color-grey-light-1;
+    border: 2px solid $color-white;
+    border-radius: 3px;
+    overflow: hidden;
+    font-size: 1.6rem;
+    color: $color-grey-dark-3;
+
+    &__name {
+        display:block;
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: .75rem;
+        background-color: $color-grey-dark-3;
+        color: $color-primary-dark;
+        transform: translateY(50%);
+    }
+}

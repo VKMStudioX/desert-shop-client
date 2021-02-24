@@ -1,0 +1,15 @@
+{
+  "short_name": "Desert Shop",
+  "name": "Desert Shop - the beest stoner and pagan folk albums",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

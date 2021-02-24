@@ -1,0 +1,56 @@
+.footer {
+    margin-top: 2rem;
+    height: 45vh;
+    background-image: linear-gradient(
+        to  bottom,
+        rgba($color-grey-dark-3, 1) 0%,
+        rgba($color-grey-dark-3, .5) 30%,
+        rgba($color-black, .5) 100%),
+    url(../images/footer.jpg);
+    background-size: cover;
+    background-position: 100% 45%;
+    position: relative;
+    padding: 8rem;
+
+    @include respond(tab-port) { // width < 900?
+        padding: 4rem; //1 rem = 8px, 8/16 = 50%
+    }    
+    
+    @include respond(phone) { // width < 900?
+        padding: 2rem;
+        background-position: 80% 45%;
+    }
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+
+    &__item {
+        margin-right: 1rem;
+
+        @include respond(phone) { // width < 900?
+            margin-right: .5rem;
+        }
+    }
+}
+
+.copyright {
+    font-size: 1.5rem;
+    color: $color-primary;
+    margin-top: 2rem;
+    width: 40%;
+
+    @include respond(tab-port) { // width < 900?
+        width: 100%;
+        // font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }  
+    @include respond(phone) { // width < 900?
+        margin-top: 24rem;
+        background-color: rgba($color-grey-dark-3, .5);
+        font-size: 75%
+        // font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+
+}
