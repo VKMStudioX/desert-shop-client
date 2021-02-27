@@ -26,8 +26,8 @@ const Footer = () => {
           </li>
             </ul>
             <p className="copyright">
-                &copy; Copyright 2021 by <strong>DesertShop.</strong> 
-                <br/>Developed by <Link to={{ pathname: "http://vkmstudiox.github.io" }} target="_blank" className="btn-text" >VKM Studio (Krzysztof Meyer)</Link> <s>based on</s> inspired by some of Udemy front-end and back-end courses with totally re-builded front-end and added some features in backend for creative ideas how this shop should works. 
+                &copy; Copyright 2021 by <Link to="/"  >DesertShop.</Link> & <Link to={{ pathname: "http://sekcjastoneru.pl" }} target="_blank"  >Sekcja Stoneru</Link> 
+                <br/>Developed by <Link to={{ pathname: "http://vkmstudiox.github.io" }} target="_blank"  >VKM Studio (Krzysztof Meyer)</Link> <s>based on</s> inspired by some of Udemy front-end and back-end courses with totally re-builded front-end and added some features in backend for creative ideas how this shop should works. 
                 <br/>Only the best stoner &amp; pagan folk music ever. 
                 <br/>The Shop is only for digital access for music which are provided with credits.
                 <br/>In the future, there will be a feature which you can recommend some nice albums for getting the new credits. 

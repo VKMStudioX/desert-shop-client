@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import sekcjaStoneruLogo from "../../images/sekcjastoneru_logo.png"
 
 const Hero = () => {
     return (
@@ -9,9 +10,12 @@ const Hero = () => {
                 <span className="heading-primary--main">Stoner</span>
                 <span className="heading-primary--sub">when the music permeates you</span>
             </h1>
-
-            <Link to='/shop' className="btn btn--dark">Discover our albums</Link>
-            </div>
+        </div>
+        <div className="hero__logo-ss-box">
+            <Link to={{ pathname: "http://sekcjastoneru.pl" }} target="_blank" >
+                <img src={sekcjaStoneruLogo} alt="sekcjaStoneru" className="hero__logo-ss-box--image" />
+            </Link>
+        </div>
         </div>
     )
 }

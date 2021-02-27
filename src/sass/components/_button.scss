@@ -92,7 +92,7 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $color-primary;
+        color: $color-primary !important;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $color-primary;
@@ -103,7 +103,7 @@
 
     &:hover {
         background-color: $color-primary;
-        color: $color-black;
+        color: $color-black !important;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
     }
