@@ -11,4 +11,4 @@ You also can rate the albums with 1-5 start system.
 In future, there will be feature which users can recommend the albums and obtain a some credits from this.
 
 ### Live Demo
-You can use my portfolio page for get the address for this project, or click directly here: http://vkmstudiox.github.io/projects/desert-shop/
+You can use my portfolio page for get the address for this project, or click directly here: http://desertshop.sekcjastoneru.pl
